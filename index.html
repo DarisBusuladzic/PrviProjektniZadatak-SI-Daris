@@ -1,86 +1,52 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="bs">
 <head>
-<title>
-    Darisova stranica o ribama
-</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konverter Valuta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
+    <div class="container mt-5">
+        <div class="card shadow p-4 rounded-4">
+            <h2 class="text-center mb-4">💱 Konverter Valuta</h2>
+            <form id="converter-form">
+                <div class="mb-3">
+                    <label for="amount" class="form-label">Unesi iznos:</label>
+                    <input type="number" class="form-control" id="amount" placeholder="npr. 100" required>
+                </div>
 
-   <style>
-    body {
-      background-image: url('pngtree-the-fishes-under-the-sea-background-image_444794.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-  </style>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="from-currency" class="form-label">Iz valute:</label>
+                        <select class="form-select" id="from-currency">
+                            <option value="BAM">BAM - Konvertibilna marka</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="USD">USD - Američki dolar</option>
+                            <option value="GBP">GBP - Britanska funta</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="to-currency" class="form-label">U valutu:</label>
+                        <select class="form-select" id="to-currency">
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="BAM">BAM - Konvertibilna marka</option>
+                            <option value="USD">USD - Američki dolar</option>
+                            <option value="GBP">GBP - Britanska funta</option>
+                        </select>
+                    </div>
+                </div>
 
-  
+                <button type="submit" class="btn btn-primary w-100">Konvertuj</button>
+            </form>
+
+            <div class="result mt-4 text-center">
+                <h4 id="result-text"></h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
-
-   <h1 align="center"> VRSTE RIBA U BOSNI I HERCEGOVINI!!!</h1>
-   <hr>
-<h2> Ribe su vodene životinje koje čine najbrojniju skupinu kralježnjaka na Zemlji. Žive u gotovo svim vodenim staništima — od slanih mora i oceana do slatkovodnih rijeka, jezera i potoka. Njihova tijela su prilagođena životu u vodi: imaju peraje za kretanje, škrge za disanje i ljuske koje ih štite. Ribe su izuzetno važan dio vodenih ekosistema jer održavaju ravnotežu u prirodi, a mnoge vrste su i značajan izvor hrane za ljude. </h2>
-<p> </p>
-<p> </p>
-<p style="margin-bottom: 20px;"></p>
-
-<a href="file:///C:/Users/Benjamin/Desktop/Stranica/Pastrmka.html">
-   <img style="margin-left: 150px;" src="Pastrmka1.png" height="150" title="PASTRMKA">
-</a>
-
-<a href="file:///C:/Users/Benjamin/Desktop/Stranica/Som.html">
-   <img style="margin-left: 150px;" src="Som1.png" height="150" title="SOM">
-</a>
-
-   <a href="file:///C:/Users/Benjamin/Desktop/Stranica/Smuđ.html"g>
-   <img style="margin-left: 100px;" src="Smuđ1.png" height="150" title="SMUĐ">
-   </a>
-<p> </p>
-   <a href="file:///C:/Users/CetvrtiDvaA/Downloads/Babu%C5%A1ka.html">
-   <img style="margin-left: 300px;" src="Babuška1.png" height="150" title="BABUŠKA">
-   </a>
-
-      <a href="file:///C:/Users/Benjamin/Desktop/Stranica/Mladica.html">
-   <img style="margin-left: 100px;" src="Mladica1.png" height="150" title="MLADICA">
-   </a>
-
-   <p></p>
-<audio style="margin-left: 550px;" controls loop autoplay src="audio.mp3">  </audio>
-
-<p></p>
-
-
-<p></p>
-
-<a href="https://fishingbooker.com/fish">
-<img style="margin-left:650px;  height: 150px; font-size: 50px;" title="SVE VRSTE RIBA" src="knjiga.png.png">  </img>
-</a>
-
-<a href="https://www.instagram.com">
-<img style="margin-left:650px;  height: 150px; font-size: 50px;" title="Instagram" src="Instagram_icon.png.webp">  </img>
-</a>
-
-<form>
-<label style="font-size: 20px; margin-left: 500px; height: 50px;" for="riba">Koja je vaša najdraža riba?:</label>
-<input style="height: 30px;" type="text" id="riba" name="riba" placeholder="Unesite vašu najdražu ribu">
-<button style="height: 35px;"  type="submit" style="font-size: 20px;">Pošalji</button>
-</form>
-
-
-</body>
-
-
-
 </html>
-
-
-
-

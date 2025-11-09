@@ -1,0 +1,21 @@
+body {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+.card {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    border: none;
+}
+
+h2 {
+    color: #2d3436;
+}
+
+.result h4 {
+    color: #0984e3;
+    font-weight: bold;
+}
